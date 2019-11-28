@@ -25,7 +25,7 @@ public class StudyNotes extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("jButton1");
+        jButton1.setText("Btn2");
 
         btnStudy1.setText("What is a System?");
         btnStudy1.addActionListener(new java.awt.event.ActionListener() {
