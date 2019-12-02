@@ -1,24 +1,53 @@
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Questions {
-    public String array[];
-    public Questions(String arr[]){
-        array = arr.clone();
-    }
-    public void read(String arr[]){
-        try{
-            File file = new File("src\\questions.txt");
-            Scanner scan = new Scanner(file);
-            int i = 0;
-            while(scan.hasNext()){
-                array[i] = scan.nextLine();
-                i++;
-            }
+
+
+    //Creates a new array of strings called questionArray.
+    public String questionArray[];
+ 
+
+    //Sets the questionArray to the clone of the inputted array of strings.
+    public Questions() {
+        read(questionArray);
+        
+        for(int i = 0; i < 10; i++){
             
-        }catch(FileNotFoundException e){
-            
+        
+        System.out.println(questionArray[i]);
         }
     }
+
+    //Reads in the questions dataFile and adds them to the questionArray.
+    public void read(String arr[]) {
+        try {
+            File f = new File("src\\questions.txt");
+            Scanner s = new Scanner(f);
+            int i = 0;
+            while (s.hasNextLine()) {
+                questionArray[i] = s.nextLine();
+                i++;
+            }
+
+        } catch (FileNotFoundException e) {
+            System.out.println("Error " + e);
+        }        
+        
+    }
+    
+    public void setQuestion(String newQuestion, int questionNum){
+        
+        //Sets the specified question to the new String that has been inputted.
+        questionArray[questionNum-1] = newQuestion;
+    }
+    
+    public String getQuestion(int questionNum){
+        
+        //Returns the question the user wants to see.
+        return questionArray[questionNum-1];
+    }
+    
 }
