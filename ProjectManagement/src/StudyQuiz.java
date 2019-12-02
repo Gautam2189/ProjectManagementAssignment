@@ -1,19 +1,24 @@
 
 public class StudyQuiz extends javax.swing.JFrame {
     StudyNotes firstWindow;
-  
+    static int qCounter = 0;
     public StudyQuiz(StudyNotes m) {
         initComponents();
         firstWindow = m;
+        updateInfo();
     }
-
+    public void updateInfo(){
+        Questions q = new Questions();
+        q.read();
+        jText.setText(q.getQuestion(qCounter));
+    }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         options = new javax.swing.ButtonGroup();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        jText = new javax.swing.JTextArea();
         option4 = new javax.swing.JRadioButton();
         option1 = new javax.swing.JRadioButton();
         option2 = new javax.swing.JRadioButton();
@@ -22,9 +27,10 @@ public class StudyQuiz extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jTextArea1.setColumns(20);
-        jTextArea1.setRows(5);
-        jScrollPane1.setViewportView(jTextArea1);
+        jText.setEditable(false);
+        jText.setColumns(20);
+        jText.setRows(5);
+        jScrollPane1.setViewportView(jText);
 
         option4.setText("Option4");
 
@@ -99,7 +105,7 @@ public class StudyQuiz extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JTextArea jTextArea1;
+    private javax.swing.JTextArea jText;
     private javax.swing.JRadioButton option1;
     private javax.swing.JRadioButton option2;
     private javax.swing.JRadioButton option3;

@@ -1,4 +1,3 @@
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -12,17 +11,11 @@ public class Questions {
 
     //Sets the questionArray to the clone of the inputted array of strings.
     public Questions() {
-        read(questionArray);
-        
-        for(int i = 0; i < 10; i++){
-            
-        
-        System.out.println(questionArray[i]);
-        }
+        read();
     }
 
     //Reads in the questions dataFile and adds them to the questionArray.
-    public void read(String arr[]) {
+    public void read() {
         try {
             File f = new File("src\\questions.txt");
             Scanner s = new Scanner(f);
