@@ -10,22 +10,23 @@ public class StudyNotes extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
+        btnStudy2 = new javax.swing.JButton();
         btnStudy1 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
+        btnStudy3 = new javax.swing.JButton();
+        btnStudy4 = new javax.swing.JButton();
+        btnStudy5 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtDisplay = new javax.swing.JTextArea();
         btnQuiz = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("Btn2");
+        btnStudy2.setText("How to measure success.");
+        btnStudy2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnStudy2ActionPerformed(evt);
+            }
+        });
 
         btnStudy1.setText("What is a System?");
         btnStudy1.addActionListener(new java.awt.event.ActionListener() {
@@ -34,19 +35,26 @@ public class StudyNotes extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setText("jButton1");
+        btnStudy3.setText("The Software Development Process (SDLC)");
+        btnStudy3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnStudy3ActionPerformed(evt);
+            }
+        });
 
-        jButton4.setText("jButton1");
+        btnStudy4.setText("Waterfall Model");
+        btnStudy4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnStudy4ActionPerformed(evt);
+            }
+        });
 
-        jButton5.setText("jButton1");
-
-        jButton6.setText("jButton1");
-
-        jButton7.setText("jButton1");
-
-        jButton8.setText("jButton1");
-
-        jButton9.setText("jButton1");
+        btnStudy5.setText("Gantt Chart");
+        btnStudy5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnStudy5ActionPerformed(evt);
+            }
+        });
 
         txtDisplay.setColumns(20);
         txtDisplay.setRows(5);
@@ -66,66 +74,47 @@ public class StudyNotes extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(16, 16, 16)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1165, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(62, 62, 62)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(62, 62, 62)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(btnStudy1, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(21, 21, 21)
-                                .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(btnQuiz))))))
+                        .addComponent(btnStudy1, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnStudy2, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(16, 16, 16)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 1165, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(22, Short.MAX_VALUE))
+                        .addComponent(btnStudy4, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(btnStudy5, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(21, 21, 21)
+                .addComponent(btnStudy3, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnQuiz)
+                .addGap(34, 34, 34))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(16, 16, 16)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 29, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnStudy1, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(btnStudy3, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnStudy2, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnStudy1, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(28, 28, 28)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(btnStudy5, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnStudy4, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(30, 30, 30))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(62, 62, 62)
                         .addComponent(btnQuiz, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(7, 7, 7)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40))
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
         pack();
@@ -142,6 +131,22 @@ public class StudyNotes extends javax.swing.JFrame {
     private void btnStudy1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStudy1ActionPerformed
         txtDisplay.setText("System:\nIs a combination of software and hardware that provides a solution for a buissness problem.\nA system involves the client, analysts, designers/developers, testers, users and others(laweyrs, communication specialists)");
     }//GEN-LAST:event_btnStudy1ActionPerformed
+
+    private void btnStudy2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStudy2ActionPerformed
+        txtDisplay.setText("Success may be measured by answering the following questions:\nDoes the project solve what it was meant to solve?\nIs it easy to maintain and administer?\nIs it scalable to meet the needs of the client?\nIs there a successfull support system in place for the client?\nWas it delivered on time and ready to go?\nWas the client happy with the end product?");
+    }//GEN-LAST:event_btnStudy2ActionPerformed
+
+    private void btnStudy3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStudy3ActionPerformed
+        txtDisplay.setText("The Software Development Process:\nCreating high-quality software involves organization involves organization, planning and utilizing various diagrammatic  conventions.\nComputer scientists have created a view of the software development process known as the 'software development life cycle'(SDLC)\nOne method is known as the 'waterfall method'\n \tA mistake made in one phase often requires the developer to backup and redo some of the work in the previous phase.");
+    }//GEN-LAST:event_btnStudy3ActionPerformed
+
+    private void btnStudy4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStudy4ActionPerformed
+        txtDisplay.setText("Developed by Dr. Winston Royce in 1970 based on his experience developing software for spacecraft mission planning.\nThe Waterfall Model consists of several phases:\n\tProblem Statement\n\tAnalysis\n\tDesign\n\tImplementiation\n\tIntegration/Test\n\tMaintenance");
+    }//GEN-LAST:event_btnStudy4ActionPerformed
+
+    private void btnStudy5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStudy5ActionPerformed
+        txtDisplay.setText("Developed by mechanical engineer Henry Gantt in the 1910's\nToop typically used by people working on a large project\n\tHooverDam\n\tEisenhower National Defense\n\tInterstate Highway System\nHelps project managers to visualize, schedule, and track scheduled as well as actual progress of projects");
+    }//GEN-LAST:event_btnStudy5ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -181,14 +186,10 @@ public class StudyNotes extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnQuiz;
     private javax.swing.JButton btnStudy1;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JButton btnStudy2;
+    private javax.swing.JButton btnStudy3;
+    private javax.swing.JButton btnStudy4;
+    private javax.swing.JButton btnStudy5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea txtDisplay;
     // End of variables declaration//GEN-END:variables
