@@ -43,7 +43,7 @@
                   </Group>
               </Group>
               <EmptySpace min="-2" pref="21" max="-2" attributes="0"/>
-              <Component id="btnStudy3" min="-2" pref="241" max="-2" attributes="0"/>
+              <Component id="btnStudy3" min="-2" pref="285" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
               <Component id="btnQuiz" min="-2" max="-2" attributes="0"/>
               <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
