@@ -146,11 +146,40 @@ public class StudyQuiz extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
     
     private void btnStartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStartActionPerformed
-        
+        btnStart.setText("Select");
         readQuestion(questions);
         Questions q = new Questions(questions);
-        
-        jText.setText(q.getQuestion(1));
+        if(counter == 1){
+            jText.setText(q.getQuestion(1));
+        }
+        if(counter == 2){
+            jText.setText(q.getQuestion(2));
+        }
+        if(counter == 3){
+            jText.setText(q.getQuestion(3));
+        }
+        if(counter == 4){
+            jText.setText(q.getQuestion(4));
+        }
+        if(counter == 5){
+            jText.setText(q.getQuestion(5));
+        }
+        if(counter == 6){
+            jText.setText(q.getQuestion(6));
+        }
+        if(counter == 7){
+            jText.setText(q.getQuestion(7));
+        }
+        if(counter == 8){
+            jText.setText(q.getQuestion(8));
+        }
+        if(counter == 9){
+            jText.setText(q.getQuestion(9));
+        }
+        if(counter == 10){
+            jText.setText(q.getQuestion(10));
+        }
+        counter++;
     }//GEN-LAST:event_btnStartActionPerformed
 
     private void btnGoBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGoBackActionPerformed
