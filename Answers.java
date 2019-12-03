@@ -56,6 +56,7 @@ public class Answers {
         }
         //takes the answers and puts them through sort
         sort(ans);
+        Output(ans);
     }
      public String[] getFind2() {
         return find2;
@@ -99,20 +100,27 @@ public class Answers {
     public String sort(String ans){
         //takes all the answers with certain numbers 
         if(ans.startsWith("2")){
-            find[7] = ans;
-    }
+
+        }
         if(ans.startsWith("3")){
-            find2[6] = ans;
+            find2[0] = ans;
     }
         if(ans.startsWith("5")){
-            find3[6] = ans;
+            find3[0] = ans;
     }
         if(ans.startsWith("8")){
-            find4[4] = ans;
+            find4[0] = ans;
     }
         if(ans.startsWith("9")){
-            find[2] = ans;
+            find5[0] = ans;
     }
+        
     return ans;
    }
+    public String Output(String str){
+        String findAnswer = "";
+        String[] store[] = {find,find2,find3,find4,find5};
+        findAnswer = str + "" + store;
+        return findAnswer;
+    }
 }
