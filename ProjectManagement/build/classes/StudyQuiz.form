@@ -31,14 +31,14 @@
               <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="1" max="-2" attributes="0">
                   <Group type="102" attributes="0">
-                      <Component id="option3" min="-2" pref="421" max="-2" attributes="0"/>
+                      <Component id="btnC" min="-2" pref="421" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="option4" min="-2" pref="421" max="-2" attributes="0"/>
+                      <Component id="btnD" min="-2" pref="421" max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <Component id="option1" min="-2" pref="421" max="-2" attributes="0"/>
+                      <Component id="btnA" min="-2" pref="421" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="option2" min="-2" pref="421" max="-2" attributes="0"/>
+                      <Component id="btnB" min="-2" pref="421" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="btnStart" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -65,12 +65,12 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <EmptySpace max="32767" attributes="0"/>
-                              <Component id="option2" min="-2" pref="167" max="-2" attributes="0"/>
+                              <Component id="btnB" min="-2" pref="167" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="59" max="-2" attributes="0"/>
-                              <Component id="option1" min="-2" pref="167" max="-2" attributes="0"/>
+                              <Component id="btnA" min="-2" pref="167" max="-2" attributes="0"/>
                               <EmptySpace pref="24" max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -83,8 +83,8 @@
                   </Group>
               </Group>
               <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="option3" alignment="3" min="-2" pref="167" max="-2" attributes="0"/>
-                  <Component id="option4" alignment="3" min="-2" pref="167" max="-2" attributes="0"/>
+                  <Component id="btnC" alignment="3" min="-2" pref="167" max="-2" attributes="0"/>
+                  <Component id="btnD" alignment="3" min="-2" pref="167" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="77" max="-2" attributes="0"/>
           </Group>
@@ -115,24 +115,24 @@
         </Component>
       </SubComponents>
     </Container>
-    <Component class="javax.swing.JRadioButton" name="option4">
+    <Component class="javax.swing.JRadioButton" name="btnD">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Option4"/>
+        <Property name="text" type="java.lang.String" value="D"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="option1">
+    <Component class="javax.swing.JRadioButton" name="btnA">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Option1"/>
+        <Property name="text" type="java.lang.String" value="A"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="option2">
+    <Component class="javax.swing.JRadioButton" name="btnB">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Option2"/>
+        <Property name="text" type="java.lang.String" value="B"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JRadioButton" name="option3">
+    <Component class="javax.swing.JRadioButton" name="btnC">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Option3"/>
+        <Property name="text" type="java.lang.String" value="C"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnStart">

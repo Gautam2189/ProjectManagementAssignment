@@ -49,10 +49,10 @@ public class StudyQuiz extends javax.swing.JFrame {
         options = new javax.swing.ButtonGroup();
         jScrollPane1 = new javax.swing.JScrollPane();
         jText = new javax.swing.JTextArea();
-        option4 = new javax.swing.JRadioButton();
-        option1 = new javax.swing.JRadioButton();
-        option2 = new javax.swing.JRadioButton();
-        option3 = new javax.swing.JRadioButton();
+        btnD = new javax.swing.JRadioButton();
+        btnA = new javax.swing.JRadioButton();
+        btnB = new javax.swing.JRadioButton();
+        btnC = new javax.swing.JRadioButton();
         btnStart = new javax.swing.JButton();
         btnGoBack = new javax.swing.JButton();
 
@@ -63,13 +63,13 @@ public class StudyQuiz extends javax.swing.JFrame {
         jText.setRows(5);
         jScrollPane1.setViewportView(jText);
 
-        option4.setText("Option4");
+        btnD.setText("D");
 
-        option1.setText("Option1");
+        btnA.setText("A");
 
-        option2.setText("Option2");
+        btnB.setText("B");
 
-        option3.setText("Option3");
+        btnC.setText("C");
 
         btnStart.setText("Start Quiz");
         btnStart.addActionListener(new java.awt.event.ActionListener() {
@@ -93,13 +93,13 @@ public class StudyQuiz extends javax.swing.JFrame {
                 .addGap(17, 17, 17)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(option3, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnC, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(option4, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnD, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addComponent(option1, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnA, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(option2, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btnB, javax.swing.GroupLayout.PREFERRED_SIZE, 421, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(btnStart))
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 921, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -120,11 +120,11 @@ public class StudyQuiz extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(option2, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnB, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(32, 32, 32))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(59, 59, 59)
-                                .addComponent(option1, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnA, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)))
                         .addGap(12, 12, 12))
                     .addGroup(layout.createSequentialGroup()
@@ -132,8 +132,8 @@ public class StudyQuiz extends javax.swing.JFrame {
                         .addComponent(btnStart)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(option3, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(option4, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnC, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnD, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(77, 77, 77))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -144,6 +144,7 @@ public class StudyQuiz extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+    
     
     private void btnStartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStartActionPerformed
         btnStart.setText("Select");
@@ -187,18 +188,18 @@ public class StudyQuiz extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_btnGoBackActionPerformed
     
-    static int counter;
+    static int counter = 1;
     static String questions[] = new String[10];
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JRadioButton btnA;
+    private javax.swing.JRadioButton btnB;
+    private javax.swing.JRadioButton btnC;
+    private javax.swing.JRadioButton btnD;
     private javax.swing.JButton btnGoBack;
     private javax.swing.JButton btnStart;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jText;
-    private javax.swing.JRadioButton option1;
-    private javax.swing.JRadioButton option2;
-    private javax.swing.JRadioButton option3;
-    private javax.swing.JRadioButton option4;
     private javax.swing.ButtonGroup options;
     // End of variables declaration//GEN-END:variables
 }
