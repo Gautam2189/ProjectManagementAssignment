@@ -1,0 +1,9 @@
+What is a System
+A Combination of software and hardware that provides a sloution for a business
+What are examples System 
+The client 
+Analysts
+Designers and developers
+Testers
+Users
+Others
