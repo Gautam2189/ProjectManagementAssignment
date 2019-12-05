@@ -1,6 +1,7 @@
 A combination of software and hardware that provides a solution for a business problem
 A hardware that contains diffrent combonations of software
 A solution for a business problem
+A combonation of solutions to solve a business problem
 The client 
 Analysts 
 Designers and developers
@@ -14,6 +15,9 @@ Is there a successful support system in place for the client
 Was it delivered on time and ready to go
 Was the client happy with the finished product
 Software development life cycle
+Software devlopment life client
+Software devlopment liner cycle
+Software designer life cycle
 Problem Statement 
 Analysis
 Design
@@ -22,10 +26,15 @@ Integration/Test
 Maintenance
 Maintenance
 Maintenance
+Intergration
+Design
+Implemention
 Gantt Chart
 UML
 Daily Log
 Weekly Reports
 Tool typically used by people working on a large project
 Helps project managers to visualize, schedule, and track scheduled as well as actual progress of projects
+Helps project managers organize their files
 Unified Modeling Language which visually specifies parts of a system
+Unity Modeling Language which specifies parts of a system
